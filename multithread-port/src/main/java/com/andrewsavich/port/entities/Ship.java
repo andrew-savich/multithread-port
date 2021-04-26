@@ -107,6 +107,10 @@ public class Ship extends Thread {
 	public int getQuantityContainers() {
 		return containers.size();
 	}
+	
+	public int getLiftingCapacity() {
+		return liftingCapacity;
+	}
 
 	public void sendToSea(Port port) {
 		setCurrentPort(port);
