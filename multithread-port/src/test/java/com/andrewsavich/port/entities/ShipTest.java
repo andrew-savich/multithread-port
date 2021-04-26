@@ -31,4 +31,9 @@ public class ShipTest {
 
 		assertTrue(underTest.getQuantityContainers() > 0);
 	}
+
+	@Test
+	public void putContainer_shouldThrowExceptionIfContainersIsEmpty() {
+		assertThrows(IllegalStateException.class, () -> underTest.putContainer(new Container()));
+	}
 }

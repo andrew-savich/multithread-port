@@ -14,7 +14,7 @@ public class Warehouse {
 
 	public void putContainer(Container container) {
 		if (getAvailablePlaces() == 0) {
-			throw new IndexOutOfBoundsException("Warehouse is full");
+			throw new IllegalStateException("Warehouse is full");
 		}
 		
 		try {
